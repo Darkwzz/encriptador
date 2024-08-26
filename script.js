@@ -49,6 +49,8 @@ const mensagem = document.querySelector('.textarea2')
 
 // função de criptografar
 
+
+
 function btncopiar() {
 
     

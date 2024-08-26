@@ -86,16 +86,17 @@ h5 img{
     border-radius: 18px;
 }
 
-.btn-copiar{
+
+
+.copiar-celular{
+    display: none;
     border: none;
     border: 1px solid #0A3871;
     color: #0A3871;
     width: 282px;
     height: 48px;
     border-radius: 18px;
-    position: relative;
-    bottom: 70px;
-    left: 60px;
+    margin: 15px;
 }
 
 .mensagem{
@@ -260,9 +261,11 @@ h5 img{
 
 
     
+    
     .sec-mensagem img{
 
-        display: none;
+
+        width: 0px;
         
     }
 

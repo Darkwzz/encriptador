@@ -14,20 +14,36 @@ const mensagem = document.querySelector('.textarea2')
 // Função para o botão
 
     function btncriptografar() {
-        const textoEncriptado = criptografar(textarea.value);
-        mensagem.value = textoEncriptado;
-        textarea.value = '';
-        mensageminvisivel();
+
+        if (textarea.value === '') {
+            alert('Digite Um Texto!')
+        }else{
+            const textoEncriptado = criptografar(textarea.value);
+            mensagem.value = textoEncriptado;
+            textarea.value = '';
+            mensageminvisivel();
+        }
+
+
+
+        
        
         
     }
 
     function btnDesencriptografar() {
-        const textoDescriptado = descriptografar(textarea.value);
-        mensagem.value = textoDescriptado;
-        textarea.value = '';
-        mensageminvisivel();
        
+        if (textarea.value === ''){
+            alert('Digite Um Texto')
+        }else{
+            const textoDescriptado = descriptografar(textarea.value);
+            mensagem.value = textoDescriptado;
+            textarea.value = '';        
+            mensageminvisivel();
+        }
+       
+       
+        
         
     }
 
